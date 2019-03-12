@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="assets/styles.css">
+	<title>Students List</title>
+</head>
+
+<body>
+	<div id="root">
+		<h1>Students List</h1>
+<!--
+		<div class="radio">
+			<p>Type of input data</p>
+			
+			<label> Manual
+				<input type="radio" name="input-type" checked id="manual-checked">
+			</label>
+			
+			<label> File
+				<input type="radio" name="input-type" id="file-checked">
+			</label>
+		</div>
+-->
+		<form action="#" id="form">
+			<!--<input class="from-file" type="file" id="file-input">-->
+
+			<input class="manual" maxlength="15" type="text" placeholder="Enter name" id="name" pattern="[A-Z][a-z]+" required>
+			<input class="manual" maxlength="15" type="text" placeholder="Enter surname" id="surname" pattern="[A-Z][a-z]+" required>
+			<input class="manual" type="date" placeholder="date" id="date" required>
+			<input class="manual" maxlength="9" type="text" placeholder="Enter marks" id="marks" pattern="[2345]\s[2345]\s[2345]\s[2345]\s[2345]" required>
+			<input class="hvr-ripple-out" type="submit" id="submit-btn" value="Add">
+		</form>
+
+		<ol id="list"></ol>
+
+		<div class="btn-wrapper">
+			<button class="hvr-ripple-out" id="sort-btn" title="Sort student by avarage mark (The highest will be the first)">Sort By Avg Mark</button>
+			<button class="hvr-ripple-out" id="hide-btn" title="Show students who have no marks 5">Show students without 5</button>
+			<button class="hvr-ripple-out" id="show-all-btn" title="Show all students">Show all</button>
+			<button class="hvr-ripple-out" id="remove-some-btn" title="Remove students who have first and third mark 3">Remove some students</button>
+			<button class="hvr-ripple-out" id="show-young-old" title="Show the youngest and the oldest students in list">Show Young&Old</button>
+		</div>
+		
+	</div>
+
+	<script src="src/list.js"></script>
+</body>
+</html>
