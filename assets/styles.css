@@ -107,6 +107,9 @@ li:hover {
 	cursor: pointer;
 	color: #d6e4fc;
 }
+.btn-wrapper button:active {
+	color: #d6e4fc;
+}
 
 li:hover>img {
 	transform: rotate(450deg);
