@@ -107,7 +107,7 @@ li:hover {
 	cursor: pointer;
 	color: #d6e4fc;
 }
-.btn-wrapper button:active {
+.btn-wrapper button:active,button:focus {
 	color: #d6e4fc;
 }
 
