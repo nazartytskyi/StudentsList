@@ -107,7 +107,7 @@ li:hover {
 	cursor: pointer;
 	color: #d6e4fc;
 }
-.btn-wrapper button:active,button:focus {
+.btn-wrapper button:active {
 	color: #d6e4fc;
 }
 
@@ -146,7 +146,7 @@ li img:hover{
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+.hvr-ripple-out:hover:before, .hvr-ripple-out:active:before {
   left: 0;
 }
 
